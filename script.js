@@ -1,9 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Wait for the DOM to be fully loaded before adding the event listener
-    var btn = document.getElementById("removeButton");
 
-    if (btn) {
-        // Add click event listener to the button
+    let btn = document.getElementById("removeButton");
+
+    if (btn) 
+	{
         btn.addEventListener('click', remove);
     }
 
@@ -11,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let select = document.getElementById('colorSelect');
         let selectedIndex = select.selectedIndex;
 
-        if (selectedIndex !== -1) {
-            // Remove the selected option
+        if (selectedIndex !== -1)
+		{
             select.remove(selectedIndex);
         }
     }
-});
+
